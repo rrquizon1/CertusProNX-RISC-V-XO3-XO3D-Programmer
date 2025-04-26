@@ -17,10 +17,11 @@ We will be using three Lattice Boards for this example:
 * MachXO3D Breakout board
 
 
-For this project we will be using three Lattice Tools!
+For this project we will be using Four Lattice Tools!
 * Lattice Propel Builder 2024.2
-* Radiant Software 2024.2
+* Lattice Radiant Software 2024.2
 * Lattice Propel 2024.2
+* Lattice Radiang Programmer 2024.2
 
 Take note that Lattice Propel Builder and Lattice Propel are installed together via Lattice Propel installer package.
 
@@ -50,6 +51,26 @@ After generating your design, it's now time to open Lattice Radiant Software and
 
 
 In Lattice Radiant, you generate the bitstream for the CertusPro-NX FPGA, configuring it to function as a processor. Complementing this, Lattice Propel serves as your integrated development environment (IDE) for developing embedded firmware, similar to how STM32CubeIDE is used for STM32 microcontrollers.
+
+Once you opened Radiant, the Radiant Project for the SoC will be generated. This will look just like a normal Radiant PRoject. You could can set the pins in the project and then run the whole flow:
+ 
+![image](https://github.com/user-attachments/assets/e587cbcc-8f9c-422b-ae73-6f74d4033999)
+
+Once you run the whole flow, you should now have a bitstream generated in your project, you should program it using Radiant Programmer.
+
+After programming this to the CertusProNX Evaluation board, your device will now work as a RISCV controller:
+![image](https://github.com/user-attachments/assets/01475db1-38fe-4bd7-af26-968b03b6b0b8)
+
+Now Let's go to Lattice Propel, I already have the workspace attached in this Repo, you could just load it right after you program the bitstream:
+![image](https://github.com/user-attachments/assets/b93a1078-ff32-4bb2-bfb5-79bcb94503ef)
+
+Notice that it looks very similar to the STM32 IDE! You should fit right in on how to use it. As from here on, you could already use your microcontroller knowledge on implementing your project. Take note that when you generate the workspace only UART peripheral is properly initialized. In these peripheral I used GPIO and I2C so I had to initialize them. 
+
+In this workspace I already had them initialized. If you want to learn more about this drivers you can go to src=>bsp. All the drivers of the peripherals used should be here. 
+
+
+
+
 
 
 
