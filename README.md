@@ -11,6 +11,12 @@ The Lattice CertusPro™-NX is a high-performance, low-power FPGA family built o
 
 In this example, we’ll use a RISC-V processor and configure I2C programming similarly to how it’s done on a microcontroller. This approach is designed to help microcontroller users transition smoothly to FPGA-based SoC development.
 
+We will be using three Lattice Boards for this example:
+* CertusPro-NX Evaluation Board
+* MachXO3 Starter Kit
+* MachXO3D Breakout board
+
+
 For this project we will be using three Lattice Tools!
 * Lattice Propel Builder 2024.2
 * Radiant Software 2024.2
@@ -38,6 +44,16 @@ After building the circuit, you have to validate then generate the design:
 
 There should be no errors in the design but there could be some warning but it should be fine for this example:
 ![image](https://github.com/user-attachments/assets/f7327e37-0ab2-4274-afdd-275118f4e9a8)
+
+After generating your design, it's now time to open Lattice Radiant Software and Lattice Propel!
+![image](https://github.com/user-attachments/assets/b45e44bb-5baa-46cf-86fc-376ae445add4)
+
+
+In Lattice Radiant, you generate the bitstream for the CertusPro-NX FPGA, configuring it to function as a processor. Complementing this, Lattice Propel serves as your integrated development environment (IDE) for developing embedded firmware, similar to how STM32CubeIDE is used for STM32 microcontrollers.
+
+
+
+
 
 
 
