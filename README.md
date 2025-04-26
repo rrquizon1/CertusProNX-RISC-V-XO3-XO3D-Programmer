@@ -16,12 +16,13 @@ We will be using three Lattice Boards for this example:
 * MachXO3 Starter Kit
 * MachXO3D Breakout board
 
+![image](https://github.com/user-attachments/assets/77c7a1b3-7803-42f9-9e72-4f8437a97020)
 
 For this project we will be using Four Lattice Tools!
 * Lattice Propel Builder 2024.2
 * Lattice Radiant Software 2024.2
 * Lattice Propel 2024.2
-* Lattice Radiang Programmer 2024.2
+* Lattice Radiant Programmer 2024.2
 
 Take note that Lattice Propel Builder and Lattice Propel are installed together via Lattice Propel installer package.
 
@@ -75,9 +76,10 @@ i2c_program.c,i2c_program.h: Contains the functions used for programming MachXO2
 data.c,data.h: Contains the bitstream data
 
 
+You could use the Debug view of Lattice Propel to readout the console printing:
 
-
-
+![image](https://github.com/user-attachments/assets/8285511e-13e8-4c00-8239-c862be1a70b1)
+![image](https://github.com/user-attachments/assets/5e486bca-97bf-4075-991d-f3a86dbec794)
 
 
 
