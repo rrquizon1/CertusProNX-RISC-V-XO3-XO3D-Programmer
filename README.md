@@ -35,6 +35,7 @@ Most templates have the following relevant parts:
 * RISC V processor
 * UART peripheral- This peripheral is used for printf debugging
 * GPIO peripheral- For simple GPIO control
+* System Memory
 
 For this example, I added two additional peripherals
 
@@ -80,6 +81,11 @@ You could use the Debug view of Lattice Propel to readout the console printing:
 
 ![image](https://github.com/user-attachments/assets/8285511e-13e8-4c00-8239-c862be1a70b1)
 ![image](https://github.com/user-attachments/assets/5e486bca-97bf-4075-991d-f3a86dbec794)
+
+Some notes on this project:
+
+* In this project, the bitstream data are stored in the system memory. This means you only have limited bitstream to store.
+* In case, you need larger space using an exterl memory will be helpful. 
 
 
 
