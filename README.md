@@ -1,3 +1,4 @@
+# Introduction
 This is an I2C internal flash programming examples for MachXO2/MachXO3 and MachXO3D using Lattice Certus Pro NX.
 
 The MachXO3 and MachXO2 devices feature internal flash memory that supports single boot, eliminating the need for an external flash and reducing component count. However, an external flash can still be used to store a golden image.For more information
@@ -9,16 +10,17 @@ This example is very similar to the [STM32 I2C programming](https://github.com/r
 
 The Lattice CertusPro™-NX is a high-performance, low-power FPGA family built on Lattice’s Nexus platform. Designed for compute- and connectivity-intensive applications, it offers advanced features typically found in larger FPGAs, while maintaining the power efficiency and small form factor that Lattice is known for.
 
+# Main Project creation
 In this example, we’ll use a RISC-V processor and configure I2C programming similarly to how it’s done on a microcontroller. This approach is designed to help microcontroller users transition smoothly to FPGA-based SoC development.
 
 We will be using three Lattice Boards for this example:
-* CertusPro-NX Evaluation Board
-* MachXO3 Starter Kit
-* MachXO3D Breakout board
+* CertusPro-NX Evaluation Board- Main RISC V Processor
+* MachXO3 Starter Kit- I2C Slave to be programmed
+* MachXO3D Breakout board- I2C Slave to be programmed
 
 ![image](https://github.com/user-attachments/assets/77c7a1b3-7803-42f9-9e72-4f8437a97020)
 
-For this project we will be using Four Lattice Tools!
+For this project we will be using Four Lattice Tools
 * Lattice Propel Builder 2024.2
 * Lattice Radiant Software 2024.2
 * Lattice Propel 2024.2
@@ -76,18 +78,22 @@ i2c_program.c,i2c_program.h: Contains the functions used for programming MachXO2
 
 data.c,data.h: Contains the bitstream data
 
-
+# Sample Debug Console Printing
 You could use the Debug view of Lattice Propel to readout the console printing:
 
 ![image](https://github.com/user-attachments/assets/8285511e-13e8-4c00-8239-c862be1a70b1)
 ![image](https://github.com/user-attachments/assets/5e486bca-97bf-4075-991d-f3a86dbec794)
 
-Some notes on this project:
+
+# Sample hardware set-up
+![image](https://github.com/user-attachments/assets/42b1efa3-fd18-4aa7-8c3f-36a0fd4beba5)
+
+![image](https://github.com/user-attachments/assets/92038356-c75d-4486-b21c-905e7a018a77)
+
+# Some notes on this project:
 
 * In this project, the bitstream data are stored in the system memory. This means you only have limited bitstream to store.
-* In case, you need larger space using an exterl memory will be helpful. 
-
-
+* In case, you need larger space using an external memory will be helpful. 
 
 
 
