@@ -90,6 +90,11 @@ You could use the Debug view of Lattice Propel to readout the console printing:
 
 ![image](https://github.com/user-attachments/assets/92038356-c75d-4486-b21c-905e7a018a77)
 
+# Resource utilization 
+![image](https://github.com/user-attachments/assets/b23d95da-cdf4-4df1-9373-79491d24ce11)
+
+This whole design only consumes a small percentage of LFCPNX-100's utilization. You can add more peripherals via Lattice Propel builder or add your own RTL in Radiant Software.
+
 # Some notes on this project:
 
 * In this project, the bitstream data are stored in the system memory. This means you only have limited bitstream to store.
