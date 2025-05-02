@@ -21,10 +21,10 @@ We will be using three Lattice Boards for this example:
 ![image](https://github.com/user-attachments/assets/77c7a1b3-7803-42f9-9e72-4f8437a97020)
 
 For this project we will be using Four Lattice Tools
-* Lattice Propel Builder 2024.2
-* Lattice Radiant Software 2024.2
-* Lattice Propel 2024.2
-* Lattice Radiant Programmer 2024.2
+* Lattice Propel Builder 2024.2 => Build the SoC with RISCV Processor
+* Lattice Radiant Software 2024.2 => Generate the bitstream to turn our FPGA to a SoC
+* Lattice Propel 2024.2 => Firmware development for RISCV processor
+* Lattice Radiant Programmer 2024.2=>Program the bitstream into your device
 
 Take note that Lattice Propel Builder and Lattice Propel are installed together via Lattice Propel installer package.
 
